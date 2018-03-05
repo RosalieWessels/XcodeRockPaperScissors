@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-ib-4J8">
+                                <rect key="frame" x="55" y="211" width="265" height="245.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3K-7N-3Mf" userLabel="Computer Turn Label">
+                                        <rect key="frame" x="95" y="0.0" width="75" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFR-Mj-5Mr" userLabel="Status Label">
+                                        <rect key="frame" x="46.5" y="89" width="172.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-4o-QuZ">
+                                        <rect key="frame" x="0.0" y="114.5" width="265" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-2r-s7B" userLabel="Rock Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <state key="normal" title="👊"/>
+                                                <connections>
+                                                    <action selector="rockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v98-0z-6vF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2v-TU-FGR" userLabel="Paper Button">
+                                                <rect key="frame" x="95" y="0.0" width="75" height="96"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <state key="normal" title="✋"/>
+                                                <connections>
+                                                    <action selector="paperPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrB-TN-dqc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caR-Nd-A99" userLabel="Scissors Button">
+                                                <rect key="frame" x="190" y="0.0" width="75" height="96"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <state key="normal" title="✌️"/>
+                                                <connections>
+                                                    <action selector="scissorsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddy-Sx-n7d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwP-iS-5V4" userLabel="Play Again Button">
+                                        <rect key="frame" x="95" y="215.5" width="75" height="30"/>
+                                        <state key="normal" title="Play Again "/>
+                                        <connections>
+                                            <action selector="playAgainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aef-mO-0di"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Na2-ib-4J8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cvf-1t-N4c"/>
+                            <constraint firstItem="Na2-ib-4J8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iVi-zR-JWz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="computerTurnLabel" destination="n3K-7N-3Mf" id="Ohf-4S-cFz"/>
+                        <outlet property="paperButton" destination="C2v-TU-FGR" id="1Lk-of-r9M"/>
+                        <outlet property="playAgainButton" destination="XwP-iS-5V4" id="yvk-ZF-jtI"/>
+                        <outlet property="rockButton" destination="M5O-2r-s7B" id="UTa-y7-rHP"/>
+                        <outlet property="scissorsButton" destination="caR-Nd-A99" id="gYG-Vl-OWK"/>
+                        <outlet property="statusLabel" destination="jFR-Mj-5Mr" id="dC1-ER-CHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
